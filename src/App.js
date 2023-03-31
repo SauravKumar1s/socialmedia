@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Contact from './components/molecules/contact/Contact';
+import HomeFeed from './components/molecules/feed/HomeFeed';
+import Footer from './components/molecules/footer/Footer';
+import Login from './components/molecules/login/Login';
+
+import Header from './components/molecules/navbar/Header';
+import Register from './components/molecules/register/Register';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   <Contact/>
+   <Footer/>
+   <Login/>
+   <Register/>
+ <Header/>
+ <HomeFeed/>
+ {/* <HeroSection/> */}
+   </>
   );
 }
 
